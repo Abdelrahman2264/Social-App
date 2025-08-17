@@ -1,18 +1,11 @@
 # 🌟 Social Connect - Modern Social Media Platform
 
-![App Screenshot](https://via.placeholder.com/1200x600.png/2a2a2a/ffffff?text=Social+Connect+Screenshot)  
-*Homepage showing posts feed with dark mode enabled*
-
 ## 📌 Table of Contents
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Project Structure](#-project-structure)
-- [Customization](#-customization)
-- [Roadmap](#-roadmap)
-- [Contributors](#-contributors)
-- [License](#-license)
 
 ## ✨ Features
 ### 🔐 Authentication
@@ -81,3 +74,4 @@ social-app/
 │   └── main/        # Core application pages
 ├── index.html       # Entry point
 └── README.md        # Documentation
+
