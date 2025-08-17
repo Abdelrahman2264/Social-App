@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Post Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+         <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><i class="fas fa-users"></i>Social App</a>
+            <div class="nav-links">
+
+   
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+       
+        <button id="mobile-theme-toggle" class="theme-btn">
+            <i class="fas fa-sun"></i> Light Mode
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+    </div>
+    <div class="auth-container">
+        <div id="register-error" class="auth-error"></div>
+        <div class="auth-card">
+            <h1><i class="fas fa-user-plus"></i> Register</h1>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name"><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="register-name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-username"><i class="fas fa-at"></i> Username</label>
+                    <input type="text" id="register-username" required pattern="[a-zA-Z0-9_]{4,20}">
+                    <span class="error-message" id="username-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="register-email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="register-password"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="register-password" required minlength="8" 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                    <span class="error-message" id="password-error"></span>
+                    <small><i class="fas fa-info-circle"></i> Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special character</small>
+                </div>
+                <div class="form-group">
+                    <label for="register-confirm"><i class="fas fa-lock"></i> Confirm Password</label>
+                    <input type="password" id="register-confirm" required>
+                    <span class="error-message" id="confirm-error"></span>
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-user-plus"></i> Register</button>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login here</a></p>
+            <div id="register-error" class="auth-error"></div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
