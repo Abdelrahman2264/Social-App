@@ -5,7 +5,6 @@
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Project Structure](#-project-structure)
 
 ## ✨ Features
 ### 🔐 Authentication
@@ -63,15 +62,3 @@ View user profiles by clicking author names
 Toggle between dark/light mode
 
 Logout via the navigation menu
-
-📂 Project Structure
-social-app/
-├── public/          # Static assets
-│   ├── css/         # Stylesheets
-│   └── js/          # JavaScript files
-├── pages/           # Application pages
-│   ├── auth/        # Authentication pages
-│   └── main/        # Core application pages
-├── index.html       # Entry point
-└── README.md        # Documentation
-
